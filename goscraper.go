@@ -217,9 +217,9 @@ func (scraper *Scraper) parseDocument(doc *Document) error {
 			}
 
 		case "meta":
-			if len(token.Attr) != 2 {
-				break
-			}
+			// if len(token.Attr) != 2 {
+			//	break
+			// }
 			if metaFragment(token) && scraper.EscapedFragmentUrl == nil {
 				hasFragment = true
 			}
